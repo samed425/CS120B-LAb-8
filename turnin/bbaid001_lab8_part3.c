@@ -113,7 +113,7 @@ void Tick(){
             break;
 
         case play:
-            if(i < 32){
+            if(i < 25){
                 if(t < hold[i]){
                     state = play;
                     t++;
@@ -125,12 +125,7 @@ void Tick(){
                 }
             }
             else{
-                if(button == 0x01){
-                    state = release;
-                }
-                else{
-                    state = wait;
-                }
+                state = release;
             }
             break;
 
