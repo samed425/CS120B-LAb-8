@@ -204,7 +204,6 @@ void Sound() {
             break;
 
         case WAIT:
-            set_PWM(note[i]);
             break;
 
         default:
