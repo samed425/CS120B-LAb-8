@@ -102,6 +102,7 @@ void Tick(){
         case INIT:
             state = wait;
             break;
+
         case wait:
             if(button == 0x01){
                 state = play;
@@ -112,7 +113,7 @@ void Tick(){
             break;
 
         case play:
-            if(i < 25){
+            if(i < 32){
                 if(t < hold[i]){
                     state = play;
                     t++;
