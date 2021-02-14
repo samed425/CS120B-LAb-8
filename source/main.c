@@ -113,20 +113,20 @@ void Tick(){
             break;
 
         case play:
-            if(i < 25){
+            if(i < 32){
                 if(t < hold[i]){
                     state = play;
                     t++;
                     set_PWM(seq[i]);
+		    break;
                 }
                 else{
                     state = stop;
                     t = 0;
+		    break;
                 }
             }
-            else{
-                state = release;
-            }
+            state = release;
             break;
 
         case stop:
