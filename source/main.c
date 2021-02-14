@@ -135,7 +135,6 @@ void Scale() {
 
         case wait:
             check = 0;
-            set_PWM(note[0]);
             break;
 
         case higher:
@@ -204,6 +203,7 @@ void Sound() {
             break;
 
         case WAIT:
+	    set_PWM(note[i]);
             break;
 
         default:
