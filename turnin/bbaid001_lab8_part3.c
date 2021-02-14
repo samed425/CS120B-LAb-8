@@ -147,6 +147,7 @@ void Tick(){
             else{
                 state = wait;
             }
+	    break;
 
         default:
             state = wait;
